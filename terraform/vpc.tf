@@ -8,7 +8,7 @@ module "vpc" {
   azs  = slice(data.aws_availability_zones.available.names, 0, 1)
 
   private_subnets  = ["172.20.1.0/24"]
-  public_subnets  = ["172.20.4.0/24"]
+  public_subnets   = ["172.20.4.0/24"]
 
   enable_dns_hostnames = true
 
